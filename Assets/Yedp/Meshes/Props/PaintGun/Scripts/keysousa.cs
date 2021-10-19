@@ -24,7 +24,7 @@ public class keysousa : MonoBehaviour
         {
             if(this.transform.position.x<=9)
             {
-               this.gameObject.transform.position+=new Vector3(-0.2f,0.0f,0.0f);
+               this.gameObject.transform.position+=new Vector3(-0.02f,0.0f,0.0f);
                Debug.Log("front");
             }
         }
@@ -32,7 +32,7 @@ public class keysousa : MonoBehaviour
         {
             if(this.transform.position.x>=-9)
             {
-               this.gameObject.transform.position+=new Vector3(0.2f,0.0f,0.0f);
+               this.gameObject.transform.position+=new Vector3(0.02f,0.0f,0.0f);
                Debug.Log("back");
             }
         }
@@ -40,7 +40,7 @@ public class keysousa : MonoBehaviour
         {
             if(this.transform.position.z>=-9.5)
             {
-               this.gameObject.transform.position+=new Vector3(0.0f,0.0f,-0.2f);
+               this.gameObject.transform.position+=new Vector3(0.0f,0.0f,-0.02f);
                Debug.Log("left");
             }
         }
@@ -48,7 +48,7 @@ public class keysousa : MonoBehaviour
         {
             if(this.transform.position.z<=9.5)
             {
-               this.gameObject.transform.position+=new Vector3(0.0f,0.0f,0.2f);
+               this.gameObject.transform.position+=new Vector3(0.0f,0.0f,0.02f);
                Debug.Log("right");
             }
         }
