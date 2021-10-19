@@ -42,13 +42,13 @@ public class ParticlePaint : MonoBehaviour
              workingTexture.SetPixel((int)pixelPoint.x, (int)pixelPoint.y,baseColor);
             }
             workingTexture.Apply();
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
         
-    }
     }
     
 }
