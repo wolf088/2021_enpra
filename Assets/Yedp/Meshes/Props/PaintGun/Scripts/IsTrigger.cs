@@ -5,23 +5,23 @@ using UnityEngine;
 public class IsTrigger : MonoBehaviour
 {
 
-    public GameObject SprayObject;
+    public ParticleSystem SprayObject;
 
     // Start is called before the first frame update
     void Start()
     {
-        SprayObject.SetActive(true);
+        //SprayObject.Play();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetButton("Fire1"))
+        if(Input.GetKey("space"))
         {
-            SprayObject.SetActive(false);
+            SprayObject.Play();
         }else
         {
-            SprayObject.SetActive(true);
+            SprayObject.Stop();
         }
     }
 }
